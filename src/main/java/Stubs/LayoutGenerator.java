@@ -25,13 +25,13 @@ public class LayoutGenerator {
                 "    android:orientation=\"vertical\">\n" +
                 "\n" +
                 "    <TextView\n" +
-                "        android:id=\"@+id/user_Id\"\n" +
+                "        android:id=\"@+id/" + GlobalStubs._class_name.toLowerCase() + "_id\"\n" +
                 "        android:layout_width=\"fill_parent\"\n" +
                 "        android:layout_height=\"wrap_content\"\n" +
                 "        android:visibility=\"gone\" />\n" +
                 "\n" +
                 "    <TextView\n" +
-                "        android:id=\"@+id/user_name\"\n" +
+                "        android:id=\"@+id/" + GlobalStubs._class_name.toLowerCase() + "_name\"\n" +
                 "        android:layout_width=\"fill_parent\"\n" +
                 "        android:layout_height=\"wrap_content\"\n" +
                 "        android:paddingLeft=\"6dip\"\n" +
