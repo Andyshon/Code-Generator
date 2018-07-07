@@ -53,4 +53,19 @@ public class GlobalStubs {
     public static final String _variable_double = "double ";
     public static final String _variable_bool = "boolean ";
 
+
+    /*
+    * todo: Adapters imports
+    * */
+
+    public static String _adapter_imports =
+            "import android.content.Context;\n" +
+            "import android.view.LayoutInflater;\n" +
+            "import android.view.View;\n" +
+            "import android.view.ViewGroup;\n" +
+            "import android.widget.ArrayAdapter;\n" +
+            "import android.widget.TextView;\n" +
+            "\n" +
+            "import java.util.ArrayList;\n";
+
 }
