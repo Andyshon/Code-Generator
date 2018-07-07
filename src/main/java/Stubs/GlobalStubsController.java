@@ -13,18 +13,15 @@ public class GlobalStubsController {
 
     public static void generateAdapterDesignPattern (HashMap<String,String> _vars, JFrame frame) {
 
-        ModelGenerator modelGenerator = new ModelGenerator();
-        modelGenerator.build(_vars);
+        new ModelGenerator().build(_vars);
 
-        LayoutGenerator layoutGenerator = new LayoutGenerator();
-        layoutGenerator.build();
+        new LayoutGenerator().build();
+
+        new AdapterGenerator().build();
+
+        //new MainActivityGenerator().build();
 
         JOptionPane.showMessageDialog(frame, "Design Pattern created in your Android Studio project!",
                 "Finish",JOptionPane.PLAIN_MESSAGE);
-
-        //writeToFile(generateLayout());
-        //writeToFile(generateLayoutListEntry());
-        //writeToFile(generateMainActivity());
-        //writeToFile(generateAdapter());
-    }
+        }
 }
